@@ -1,21 +1,36 @@
-"features": {
-  // Docker
-  "ghcr.io/devcontainers/features/docker-in-docker": {},
-  "ghcr.io/devcontainers/features/docker-outside-of-docker": {},
-  
-  // Programmiersprachen
-  "ghcr.io/devcontainers/features/node": {"version": "20"},
-  "ghcr.io/devcontainers/features/python": {"version": "3.11"},
-  "ghcr.io/devcontainers/features/go": {"version": "1.21"},
-  "ghcr.io/devcontainers/features/rust": {},
-  
-  // Tools
-  "ghcr.io/devcontainers/features/aws-cli": {},
-  "ghcr.io/devcontainers/features/kubectl-helm-minikube": {},
-  "ghcr.io/devcontainers/features/terraform": {},
-  "ghcr.io/devcontainers/features/git": {},
-  
-  // Datenbanken
-  "ghcr.io/devcontainers/features/postgres": {},
-  "ghcr.io/devcontainers/features/mysql": {}
+// The Dev Container format allows you to configure your environment. At the heart of it
+// is a Docker image or Dockerfile which controls the tools available in your environment.
+//
+// See https://aka.ms/devcontainer.json for more information.
+{
+	"name": "Ona",
+	// Use "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+	// instead of the build to use a pre-built image.
+	"build": {
+        "context": ".",
+        "dockerfile": "Dockerfile"
+    },
+	// Features add additional features to your environment. See https://containers.dev/features
+	// Beware: features are not supported on all platforms and may have unintended side-effects.
+	"features": {
+		// Docker
+		"ghcr.io/devcontainers/features/docker-in-docker": {},
+		"ghcr.io/devcontainers/features/docker-outside-of-docker": {},
+		
+		// Programmiersprachen
+		"ghcr.io/devcontainers/features/node": {"version": "20"},
+		"ghcr.io/devcontainers/features/python": {"version": "3.11"},
+		"ghcr.io/devcontainers/features/go": {"version": "1.21"},
+		"ghcr.io/devcontainers/features/rust": {},
+		
+		// Tools
+		"ghcr.io/devcontainers/features/aws-cli": {},
+		"ghcr.io/devcontainers/features/kubectl-helm-minikube": {},
+		"ghcr.io/devcontainers/features/terraform": {},
+		"ghcr.io/devcontainers/features/git": {},
+		
+		// Datenbanken
+		//"ghcr.io/devcontainers/features/postgres": {},
+		//"ghcr.io/devcontainers/features/mysql": {}
+	}
 }
