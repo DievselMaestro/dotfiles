@@ -1,0 +1,21 @@
+"features": {
+  // Docker
+  "ghcr.io/devcontainers/features/docker-in-docker": {},
+  "ghcr.io/devcontainers/features/docker-outside-of-docker": {},
+  
+  // Programmiersprachen
+  "ghcr.io/devcontainers/features/node": {"version": "20"},
+  "ghcr.io/devcontainers/features/python": {"version": "3.11"},
+  "ghcr.io/devcontainers/features/go": {"version": "1.21"},
+  "ghcr.io/devcontainers/features/rust": {},
+  
+  // Tools
+  "ghcr.io/devcontainers/features/aws-cli": {},
+  "ghcr.io/devcontainers/features/kubectl-helm-minikube": {},
+  "ghcr.io/devcontainers/features/terraform": {},
+  "ghcr.io/devcontainers/features/git": {},
+  
+  // Datenbanken
+  "ghcr.io/devcontainers/features/postgres": {},
+  "ghcr.io/devcontainers/features/mysql": {}
+}
